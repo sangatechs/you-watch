@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Using Sportzfy APK Favourites to Build Your Personal Match Watchlist</title>
+<meta name="description" content="Using Sportzfy APK favourites to build your personal match watchlist — notifications, buffer-free streaming, and organised access to your favourite sports.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Using Sportzfy APK Favourites to Build Your Personal Match Watchlist","url":"https://bdsportzfy.com/","publisher":{"@type":"Organization","name":"BDSportzfy"}}</script>
+<script>document.addEventListener('DOMContentLoaded',function(){var c=document.createElement('link');c.rel='canonical';c.href=window.location.href;document.head.appendChild(c);});</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#fffbf5;color:#1a1200;line-height:1.85}
+a{color:#e65100;text-decoration:none;font-weight:700}
+a:hover{color:#bf360c}
+
+.bar{background:linear-gradient(135deg,#e65100,#ff8f00);padding:9px 44px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.bar .bl{font-size:0.88rem;font-weight:700;color:#fff}
+.bar .br{display:flex;gap:20px}
+.bar .br span{color:rgba(255,255,255,0.65);font-size:0.78rem}
+
+.nav{background:#fff;border-bottom:2px solid #ffe0b2;padding:0 44px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:99;box-shadow:0 1px 6px rgba(230,81,0,0.08)}
+.nav-logo{font-size:1.1rem;font-weight:800;color:#1a1200;padding:13px 0;letter-spacing:-0.3px}
+.nav-logo b{color:#e65100}
+.nav-links a{color:#7a5a3a;font-size:0.83rem;padding:8px 12px;text-decoration:none;font-weight:600;display:inline-block;transition:color .2s}
+.nav-links a:hover{color:#e65100}
+
+/* HERO — watchlist/bookmark style */
+.hero{background:#fff;padding:72px 44px;border-bottom:2px solid #ffe0b2}
+.hero-inner{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:start}
+@media(max-width:760px){.hero-inner{grid-template-columns:1fr}}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:#fff3e0;border:1px solid #ffe0b2;color:#e65100;font-size:0.7rem;font-weight:700;padding:5px 14px;border-radius:30px;margin-bottom:18px;letter-spacing:1px}
+.hero h1{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:#1a1200;line-height:1.2;margin-bottom:16px;letter-spacing:-0.3px}
+.hero h1 em{color:#e65100;font-style:normal}
+.hero-p{color:#7a5a3a;font-size:0.97rem;max-width:460px;font-weight:300}
+.watchlist-mock{background:#fffbf5;border:2px solid #ffe0b2;border-radius:10px;padding:20px}
+.wm-title{font-size:0.72rem;font-weight:700;color:#e65100;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #ffe0b2}
+.wm-item{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,224,178,0.5);font-size:0.85rem}
+.wm-item:last-child{border-bottom:none}
+.wm-item .wi-name{color:#1a1200;font-weight:600}
+.wm-item .wi-badge{font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:10px}
+.wi-badge.live{background:#e53935;color:#fff}
+.wi-badge.soon{background:#fff3e0;color:#e65100;border:1px solid #ffe0b2}
+.wi-badge.fav{background:#ffe0b2;color:#e65100}
+
+.intro-wrap{max-width:880px;margin:0 auto;padding:48px 44px 0}
+.intro-card{background:#fff;border-radius:8px;padding:28px 32px;box-shadow:0 4px 20px rgba(230,81,0,0.08);border-left:5px solid #e65100;font-size:1.04rem;color:#1a1200;line-height:1.9;font-weight:300}
+
+.section{padding:64px 44px}
+.section.alt{background:#fff}
+.wrap{max-width:960px;margin:0 auto}
+.chip{display:inline-block;background:#fff3e0;color:#e65100;font-size:0.7rem;font-weight:700;letter-spacing:2px;padding:4px 12px;border-radius:20px;margin-bottom:14px}
+.sh{font-size:1.65rem;color:#1a1200;margin-bottom:14px;font-weight:800;letter-spacing:-0.3px}
+
+.tip-rows{display:flex;flex-direction:column;gap:14px;margin:16px 0 28px}
+.tr{background:#fff;border:1px solid #ffe0b2;border-radius:8px;padding:18px 20px;display:flex;gap:16px;align-items:flex-start;border-left:3px solid #e65100}
+.tr .tri{font-size:1.2rem;flex-shrink:0;margin-top:2px}
+.tr h4{color:#1a1200;font-size:0.92rem;font-weight:700;margin-bottom:5px}
+.tr p{color:#7a5a3a;font-size:0.88rem;margin:0;line-height:1.65;font-weight:300}
+
+.note{background:#fff3e0;border-left:4px solid #e65100;border-radius:0 8px 8px 0;padding:18px 22px;margin:24px 0;font-size:0.95rem;color:#1a1200;font-weight:300}
+.note strong{color:#e65100}
+
+h2{font-size:1.4rem;color:#1a1200;margin:36px 0 14px;padding-bottom:8px;border-bottom:2px solid #ffe0b2;font-weight:800;letter-spacing:-0.3px}
+p{margin-bottom:18px;font-size:0.96rem;color:#7a5a3a;font-weight:300}
+
+footer{background:#1a0800;padding:24px 44px;text-align:center;border-top:3px solid #e65100}
+footer p{color:#3a1800;font-size:0.82rem;margin:0;font-weight:600}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bl">BDSportzfy — Watchlist Feature</div><div class="br"><span>Favourites</span><span>Match Alerts</span></div></div>
+<nav class="nav"><div class="nav-logo">Sportz<b>fy</b></div><div class="nav-links"><a href="#">Favourites</a><a href="#">Watchlist</a><a href="#">Alerts</a></div></nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill">WATCHLIST GUIDE</div>
+      <h1>Building Your Personal Match <em>Watchlist</em> in Sportzfy</h1>
+      <p class="hero-p">Your personal watchlist turns a generic streaming app into a personalised sports companion that knows exactly what you care about watching.</p>
+    </div>
+    <div class="watchlist-mock">
+      <div class="wm-title">MY WATCHLIST</div>
+      <div class="wm-item"><span class="wi-name">🏏 Bangladesh vs India</span><span class="wi-badge live">LIVE</span></div>
+      <div class="wm-item"><span class="wi-name">⚽ PSG vs Bayern</span><span class="wi-badge soon">Tonight 21:00</span></div>
+      <div class="wm-item"><span class="wi-name">⭐ Premier League</span><span class="wi-badge fav">Favourited</span></div>
+      <div class="wm-item"><span class="wi-name">🏏 Pakistan Super League</span><span class="wi-badge soon">Tomorrow</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="intro-wrap">
+  <div class="intro-card">Whether you watch football at night or cricket in the afternoon, the <a href="https://bdsportzfy.com/"><strong>sportzfy app</strong></a> keeps every match within reach. Clear navigation, match notifications, and buffer-free streaming help you stay connected to live sports with minimum effort.</div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <p>A personal watchlist is the difference between an app you use occasionally and one you return to every match day. When your favourite teams, leagues, and tournaments are saved and organised inside Sportzfy, opening the app on match day takes you directly to what matters rather than requiring a fresh search through hundreds of channels and fixtures every time.</p>
+    <p>The favourites system in Sportzfy works at both the channel level and the team or tournament level. You can favourite a specific channel that reliably shows your preferred league, and you can also save specific tournament categories so they appear prominently on your home screen during the seasons they're active. This two-level system means your watchlist remains useful whether you're following a specific team through a season or just want the best channel for any given sport each night.</p>
+
+    <span class="chip">HOW TO USE IT</span>
+    <h2 class="sh" style="border:none;margin-top:10px;">Five Ways to Make Favourites Work for You</h2>
+    <div class="tip-rows">
+      <div class="tr"><div class="tri">⭐</div><div><h4>Star Your Most-Watched Channels</h4><p>Long-press any channel in the channel list to add it to favourites. Starred channels appear at the top of the channel list for instant access without scrolling through the full catalogue.</p></div></div>
+      <div class="tr"><div class="tri">🔔</div><div><h4>Enable Match Notifications</h4><p>Turn on notifications for your favourite teams or leagues to receive an alert when a match is about to begin. Never arrive at the app twenty minutes into a match because you forgot it was on.</p></div></div>
+      <div class="tr"><div class="tri">📋</div><div><h4>Create Sport-Specific Lists</h4><p>Organise your watchlist by sport rather than keeping everything in one list. Separate cricket and football favourites mean you navigate directly to the right sport without scrolling past irrelevant channels.</p></div></div>
+      <div class="tr"><div class="tri">🔄</div><div><h4>Update Your List Seasonally</h4><p>Tournament seasons end and new ones begin. Review your watchlist at the start of each major season to add new competitions and remove those that have concluded, keeping the list current and useful.</p></div></div>
+      <div class="tr"><div class="tri">📱</div><div><h4>Sync Across Devices</h4><p>If you watch on both a phone and a TV device, ensure your watchlist settings are preserved across devices by using the same account configuration on both. Consistent access regardless of which device you pick up.</p></div></div>
+    </div>
+    <div class="note"><strong>Practical tip:</strong> Limit your active favourites list to twelve to fifteen channels. A longer list becomes as difficult to navigate as no list at all. Curate for quality — the channels you actually watch most — rather than adding everything that looks potentially interesting.</div>
+  </div>
+</section>
+
+<footer><p>© 2026 BDSportzfy — Build Your Perfect Sports Watchlist</p></footer>
+</body>
+</html>
